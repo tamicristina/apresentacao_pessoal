@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav_menu">
+        <ul>
+          <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+          <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+          <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+          <a href="#curriculo"><i data-feather="list"></i>Currículo</a>
+          <a href="#contact"><i data-feather="send"></i>Contato</a>
+        </ul>
+      </nav>
+    </header>
+    <section id="aboutme" class="section_about_me">
+      <div class="section_container">
+        <h1 class="section_title">Sobre mim</h1>
+        <p>
+          Resido em São Bernardo do Campo - SP, tenho 26 anos e estou no
+          terceiro Semestre em Análise e Desenvolvimento de Sistemas pela
+          Faculdade Impacta de Tecnologia. Tenho me dedicado em aprofundar
+          minhas habilidades técnicas em HTML, CSS e JavaScript, além de possuir
+          sólidos conhecimentos em linguagem R, Python e banco de dados (SQL
+          Server e MySQL).
+          <br />
+          <br />Sou muito curiosa, adoro aprender coisas novas e compartilhar
+          conhecimento com outras pessoas.
+        </p>
+      </div>
+
+      <div class="slider">
+        <div class="line pink"></div>
+        <div class="line green"></div>
+
+        <div class="slides">
+
+          <input type="radio" name="radio-btn" id="radio1" checked/>
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide first">
+            <img src="/assets/sobremim_1.jpeg" alt="imagem 1" />
+          </div>
+          <div class="slide">
+            <img src="/assets/sobremim_2.jpeg" alt="imagem 2" />
+          </div>
+          <div class="slide">
+            <img src="/assets/sobremim_3.jpeg" alt="imagem 3" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto_btn1"></div>
+            <div class="auto_btn2"></div>
+            <div class="auto_btn3"></div>
+          </div>
+
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

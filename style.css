@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: #5280e2;
+  --green: #15cdcb;
+  --bg-dark: #212226;
+  --light-grey: #e0dede;
+  --menu-height: 75px;
+  --medium-grey: #2f3034;
+  --dark-pink: #ab33ab;
+}
+
+html,
+body {
+  background: var(--bg-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.nav_menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_menu ul a {
+  font-size: 24px;
+  color: var(--dark-pink);
+  text-decoration: none;
+}
+
+.section_about_me {
+  display: flex;
+  padding: 100px;
+}
+
+.section_container {
+  width: 50%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_title {
+  color: var(--dark-pink);
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 50%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 450px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 615px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  color: #ab33ab;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid var(--purple);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.section_about_me .slider .line {
+  width: calc(32% + 40px);
+  height: calc(50% + 40px);
+  border: 1px solid var(--dark-pink);
+  position: absolute;
+  top: 211px;
+  left: calc(50% - 2% / 2 - 2px);
+}
+
+.section_about_me .slider .line.green {
+  transform: rotate(-3.3deg);
+  color: var(--green);
+}
