@@ -1,7 +1,5 @@
 # Apresentação Pessoal
 
-# Em Construção...🛠️
-
 ## Sobre
 
 Página desenvolvida com o intuito de apresentar um pouco mais sobre a minha vida pessoal e profissional, apresentando também minhas habilidades atuais e meu portfólio
@@ -17,3 +15,4 @@ Página desenvolvida com o intuito de apresentar um pouco mais sobre a minha vid
 - **JavaScript**
 
 ---
+🚧 Projeto em construção... 🚀
